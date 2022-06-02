@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "head.html" %}
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  
+  <div class="container">
+    <header class="mb-3">
+      <h1 class="text-center">
+        LaunchDarkly Assessment
+      </h1>
+    </header>
+
+    <main>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+      {% endif %}
+      {% endwith %}  
+      
+      {% block main %}
+      {% endblock %}
+    </main>
+
+    <footer class="mt-5 mb-0">
+      {% block footer %}
+      {% endblock %}
+    </footer>
+  </div>
+  
+  {% include "scripts.html" %}
+</body>
+
+</html>

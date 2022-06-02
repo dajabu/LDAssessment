@@ -1,0 +1,16 @@
+{% if email %}
+  <div class="profile btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="{{ email | gravatar }}" alt="{{ email }}" class="avatar" />
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <span class="dropdown-item disabled">{{ email }}</span>
+      <div class="dropdown-divider"></div>
+      <span class="dropdown-item disabled">{{ key }}</span>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="/logout">Log out</a>
+    </div>
+  </div>
+{% else %}
+  <a class="profile text-muted" href="/login">Log in</a>
+{% endif %}

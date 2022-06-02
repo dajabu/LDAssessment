@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+launchdarkly-server-sdk
+flask_wtf
+wtforms
+Flask-Gravatar
+email_validator
