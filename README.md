@@ -7,7 +7,9 @@ The reason for this is to allow specific features to be available for managers i
 ## Env Prerequisite 
 
 -> Python3 and PIP3 setup is installed and configured.
+
 -> An active [LaunchDarkly account](https://app.launchdarkly.com/login) with the ability to create a flag.
+
 -> Basic knowledge of the Python and JavaScript programming languages.
 
 ## Setup the Launchdarkly Environment and Project
