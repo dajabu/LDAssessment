@@ -1,10 +1,8 @@
-# LDAssessment
-
 # Launchdarkly Solutions Engineer Assessment
 
-This is the final version of my assessment submission. It's an easy application built with Python and the Flask framework. There's not a lot of complexity but the feature toggle that's being used displays a 3rd button option to any user with "manager" in their email.
+This is the final version of my assessment submission. It's an application built with Python and the Flask framework. The Feature Flag displays a third button option to a user when the flag is toggled "On" and the user uses an email with the word "manager" in it.
 
-The reason for this is to allow specific features to be available for managers in a company and not for their employees. In an authentic scenario, there would be more complexities but for this demo, I feel it's enough.
+The reason for this is to allow specific features to be available for managers in a company and not for their employees. In an authentic scenario, there would be more complexities, but for this demo, I feel it's enough.
 
 ## Env Prerequisite 
 
@@ -67,7 +65,10 @@ After installing the SDK, you can import and initialize the client into the code
 Once the dependencies are installed and the application has started, you will see something like the below log in your terminal;
   `Running on http://127.0.0.1:5000`
  
- 4. Open your browser and enter the url.
- 5. You will see 2 options 
-
-
+ 4. Open your browser and enter the URL.
+ 5. You will see buttons available and a login button in the top right.
+ 6.  Select the login and enter any email address.
+ 7. You will see that the two buttons are still there.
+ 8. Logout and log in again with a user email that contains the word "manager"
+ 9. You will see that a 3 button is available.
+ 10. The feature flag is working. The third button only appears when the feature flag is enabled and using targeting, only managers will see it.
