@@ -48,7 +48,8 @@ def user_object_from_email(email):
     email_hash_hex = email_hash.hexdigest()[:10]
     ## Identify user by their hashed email address
     return {
-      "key": email_hash_hex
+      "key": email_hash_hex,
+      "email": email
     }
 
   
