@@ -33,7 +33,7 @@ def pricing():
         "key": "anon",
         "anonymous": True
       }
-    is_tier_3_enabled = ld_client.variation('pricing-tier-3', user, False)
+    is_tier_3_enabled = ld_client.variation('manager-button', user, False)
     return render_template(
       'pricing.html',
       is_tier_3_enabled=is_tier_3_enabled,
